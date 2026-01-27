@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J. Clayton Peacock</title>
+  <style>
+    :root {
+  --beige: #d5ddbc;      /* background */
+  --text: #222;       /* main text color (dark gray) */
+  --red: #931f1d;     /* your name color */
+  --green: #8a9b68;    /* buttons, headings, links */
+}
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--beige);
+      color: var(--text);
+    }
+
+    /* ===== HEADER LAYOUT ===== */
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+      padding: 2rem;
+      gap: 3rem;
+    }
+
+    img {
+      border-radius: 12px;
+      width: 280px;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .info {
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: var(--red);
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.3rem;
+      margin-top: 0;
+      color: #333;
+    }
+
+    .bio {
+      margin-top: 1.2rem;
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin-top: 1.2rem;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      color: var(--beige);
+      background-color: var(--green);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin-right: 0.5rem;
+      font-size: 0.9rem;
+      transition: opacity 0.3s;
+    }
+
+    .buttons a:hover {
+      opacity: 0.85;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h3 {
+      color: var(--green);
+      font-size: 1.5rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.4rem;
+      margin-top: 3rem;
+    }
+
+    .skills-category {
+      margin-bottom: 1.2rem;
+    }
+
+    .skills-category-name {
+      font-weight: 600;
+      color: var(--red);
+      margin-bottom: 0.5rem;
+    }
+
+    .skills-list {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .repo-item {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background-color: #e8edd9;
+      border-radius: 8px;
+    }
+
+    .repo-name {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--red);
+      margin-bottom: 0.5rem;
+    }
+
+    .repo-description {
+      color: #555;
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .repo-link {
+      color: var(--green);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .repo-link:hover {
+      opacity: 0.85;
+    }
+
+    .pub-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .pub-title {
+      font-weight: 600;
+      color: #444;
+    }
+
+    .pub-authors {
+      color: #555;
+    }
+
+    .pub-journal {
+      color: #777;
+      font-style: italic;
+    }
+
+    .pub-links a {
+      color: var(--green);
+      text-decoration: none;
+      margin-left: 0rem;
+    }
+
+    .pub-links a:hover {
+      opacity: 0.85;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+      margin: 4rem 0 2rem;
+    }
+
+    @media (max-width: 850px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      img {
+        width: 220px;
+      }
+      .buttons a {
+        display: inline-block;
+        margin: 0.3rem;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="container">
+    <div class="info">
+      <h1>J. Clayton Peacock</h1>
+      <h2>PhD Candidate<br>New York University</h2>
+  
+      <div class="buttons">
+        <a href="mailto:jcp9552@nyu.edu">Contact</a>
+        <a href="cv.pdf" target="_blank">CV</a>
+        <a href="https://www.linkedin.com/in/j-clayton-peacock-6970411a7/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/cpeacockc" target="_blank">Github</a>
+        <a href="https://scholar.google.com/citations?user=ORSR8BoAAAAJ&hl=en&authuser=1" target="_blank">Scholar</a>
+      </div>
+      <p class="bio">
+       I'm a theoretical quantum condensed matter physicist interested in topics including quantum chaos and ergodicity-breaking, disordered systems, dissipative/driven systems, and quantum simulation techniques (Krylov subspace expansion and other sparse methods, tensor networks, pauli string binary encoding, and quantum trajectory methods)
+      </p>
+    </div>
+    <img src="headshot.png" alt="headshot" />
+  </div>
+      
+
+  <!-- Main content -->
+  <main>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h3>Research Interests & Expertise</h3>
+      
+      <div class="skills-category">
+        <div class="skills-category-name">Theoretical Condensed Matter Physics</div>
+        <div class="skills-list">
+          Quantum chaos and integrability; Non-equilibrium dynamics; Anderson and many-body localization; Disordered systems; Dissipative and driven systems
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <div class="skills-category-name">Quantum Simulation Methods</div>
+        <div class="skills-list">
+          Tensor networks; Krylov subspace methods; Pauli string binary encoding; Global optimization; Sparse matrix methods; Quantum trajectories for Markovian dynamics
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Repositories Section -->
+    <section id="repositories">
+      <h3>Software & Code</h3>
+      
+      <div class="repo-item">
+        <div class="repo-name">PauliStrings.jl</div>
+        <div class="repo-description">
+          Julia package for performing quantum simulation using Pauli string binary encoding (matrix free)
+        </div>
+        <a href="https://paulistrings.org/" class="repo-link" target="_blank">Visit Website →</a>
+      </div>
+
+      <div class="repo-item">
+        <div class="repo-name">Localization in Krylov Space</div>
+        <div class="repo-description">
+          Repo for generating a Krylov subspace expansion and Lanczos coefficients for the Anderson model and calculating conserved quantities (or localized integrals of motion) as in arXiv:2510.26920
+        </div>
+        <a href="https://github.com/cpeacockc/Localization_in_Krylov_space" class="repo-link" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="repo-item">
+        <div class="repo-name">Continuous Matrix Product States</div>
+        <div class="repo-description">
+          Repo for constructing continuous matrix product state Ansatz for finding ground states of one-dimensional bosons and Bose-Fermi mixtures as in PhysRevResearch.4.L022034
+        </div>
+        <a href="https://github.com/cpeacockc/ContinuousMatrixProductStates" class="repo-link" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="repo-item">
+        <div class="repo-name">Quantum Simulator</div>
+        <div class="repo-description">
+          Repo for quantum simulation with sparse and dense matrices
+        </div>
+        <a href="https://github.com/cpeacockc/Quantum_simulator" class="repo-link" target="_blank">View on GitHub →</a>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+      <h3>Publications / Manuscripts</h3>
+
+      <div class="pub-item">
+        <div class="pub-title">
+          The Anderson transition - a view from Krylov space
+        </div>
+        <div class="pub-authors">
+          J. Clayton Peacock, Vadim Oganesyan, Dries Sels
+        </div>
+        <div class="pub-journal">
+          arXiv:2510.26920 - in review at Phys. Rev. B
+        </div>
+        <span class="pub-links">
+          <a href="anderson_krylov_paper.pdf" target="_blank">[arXiv PDF]</a> <a href="https://arxiv.org/abs/2510.26920" target="_blank">[Online]</a>
+        </span>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">
+          Quantum many-body simulations with PauliStrings.jl
+        </div>
+        <div class="pub-authors">
+          Nicolas Loizeau, J. Clayton Peacock, Dries Sels
+        </div>
+        <div class="pub-journal">
+          SciPost Phys. Codebases, 2025
+        </div>
+        <span class="pub-links">
+          <a href="paulistrings_paper.pdf" target="_blank">[arXiv PDF]</a><a href="https://scipost.org/SciPostPhysCodeb.54" target="_blank">[Online]</a>
+        </span>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">
+          Many-body delocalization from embedded thermal inclusion
+        </div>
+        <div class="pub-authors">
+          J. Clayton Peacock and Dries Sels
+        </div>
+        <div class="pub-journal">
+          Phys. Rev. B, 2023
+        </div>
+        <span class="pub-links">
+          <a href="thermal_inclusion_paper.pdf" target="_blank">[arXiv PDF]</a><a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.L020201" target="_blank">[Online]</a>
+        </span>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">
+          Quantum coherent states of interacting Bose-Fermi mixtures in one dimension
+        </div>
+        <div class="pub-authors">
+          J. Clayton Peacock, Aleksandar Ljepoja, C. J. Bolech
+        </div>
+        <div class="pub-journal">
+          Phys. Rev. Research, 2022
+        </div>
+        <span class="pub-links">
+          <a href="cmps_mixtures_paper.pdf" target="_blank">[arXiv PDF]</a> <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.L022034" target="_blank">[Online]</a>
+        </span>
+      </div>
+    </section>
+
+    <footer>
+      View this website on <span class="pub-links"><a href="https://github.com/cpeacockc/cpeacockc.github.io" target="_blank">GitHub</a></span>
+    </footer>
+  </main>
+</body>
+</html>
